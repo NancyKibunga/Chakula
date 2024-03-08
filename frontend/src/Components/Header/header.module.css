@@ -1,0 +1,66 @@
+.header{
+    background: white;
+    padding: 0;
+    border-bottom: 1 px solid red;
+
+}
+.header a {
+    color: red;
+
+}
+
+.header a:hover{
+    background: red;
+    color: white;
+    cursor: pointer;
+}
+
+.container{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+/* logo positioning */
+.logo{
+    font-weight: bold;
+    padding: 1 rem;
+
+}
+
+.header ul{
+    display: flex;
+    list-style-type:  none;
+    margin: 0;
+}
+
+.header ul a{
+    padding: 1 rem;
+    display: inline-block;
+}
+
+.menu_container{
+    position: relative;
+}
+
+.menu{
+    position: absolute;
+    z-index: 1;
+    background-color: whitesmoke;
+    display: none;
+}
+/* for the menu items to appear when one hovers over the username */
+.menu_container:hover .menu{
+    display: block;
+}
+.menu a{
+    width: 100%;
+    min-width: 8rem;
+}
+/*for the cart items*/
+.cart_count{
+    background-color: orangered;
+    color: white;
+    padding: 0.1rem 0.45rem;
+    border-radius: 100rem;
+    font-size: 0.9rem;
+}
